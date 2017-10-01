@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/4.4.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/4.4.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/4.4.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/4.4.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/4.4.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    
+  </head>
+  <body>
+    <div><button id="btnLogin">Log In</button></div>
+  
+    <!-- Email Login -->
+    <div>
+      <input id="txtEmail" type="email" placeholder="Email" name=""/>
+      <input id="txtPassword" type="password" placeholder="Password" name=""/>
+      <div>
+        <button id="btnEmailLogin">Login</button>
+        <button id="btnCreateAccount">Create Account</button>
+      </div>
+      <div></div>
+    </div>
+    <!-- WELCOME MSG -->    
+    <div id="msg"></div>
+    <!-- SIGN OUT -->    
+    <div><button id="btnLogout">Log Out</button></div>
+    <!-- MOVIE DATA -->
+    <div>
+      <ul id='movies'></ul>
+    </div>
+    <div>
+      <ul id='characters'></ul>
+    </div>
+    <!-- TROLLBOX -->
+    <hr>
+    <h3>Movie Talk</h3>
+    <div id='trollbox'></div>
+    <div>&nbsp;</div>
+    <div>
+      <input id='txtTrollMsg' placeholder='What now?' type="text" name=""/>
+      <div>
+        <button id='btnNewTrollMsg'>Post It!</button>
+      </div>
+    </div>
+    <script defer src="app.js"></script>
+  </body>
+</html>
